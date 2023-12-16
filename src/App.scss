@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.818), rgba(0, 0, 0, 0.5)), url('https://media.discordapp.net/attachments/1180551364644982807/1180916170283548683/image.png?ex=657f28e3&is=656cb3e3&hm=d728f969a9584ab1e4d154c1891efede403cf19c39e94176847af13c91be6a63&=&format=webp&width=1245&height=700');
+    filter: blur(0.9);
+    padding: 80px 0 160px 0;
+
+    .brand {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        font-size: 30px;
+
+        img {
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        h1{
+            color: rgb(129, 198, 25);
+            font-weight: 100;
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        a {
+          position: relative;
+          color: rgb(231, 244, 223);
+          text-decoration: none;
+          margin: 0 2vw;
+          font-size: 20px;
+    
+          &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(231, 244, 223);
+            transition: width 0.3s ease; /* Adjust the transition duration as needed */
+          }
+    
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+}
+
+.social {
+    padding: 20px 30vw;
+    background-color: #F0F1EC;
+
+    h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

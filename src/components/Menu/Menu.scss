@@ -1,0 +1,108 @@
+.menu {
+    .categories,
+    .seasonal {
+        padding: 40px 10vw;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+        .item {
+            width: 40%;
+            background-color: #F0F1EC;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05); 
+            }
+
+            .top {
+                position: relative;
+
+                img {
+                    border-radius: 10px;
+                    max-height: 300px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .badge {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #007BFF;
+                    color: #FFFFFF;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+            }
+
+            .bottom {
+                padding: 15px; 
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    h2 {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+
+                    .icon {
+                        font-size: 24px;
+                        color: #007BFF;
+                        margin-left: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #555555;
+                    margin-bottom: 10px;
+                }
+
+                .price {
+                    font-weight: bold;
+                    color: #007BFF;
+                    font-size: 20px;
+                }
+
+                button {
+                    margin-top: 15px;
+                    background-color: #007BFF;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    transition: background-color 0.3s ease;
+                }
+
+                button:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}
